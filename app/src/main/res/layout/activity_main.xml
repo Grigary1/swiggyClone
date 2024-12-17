@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7B1FA2">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="#FF9800" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Food Delivery"
+            android:textSize="18sp"
+            android:textColor="#FF9800"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp" />
+    </RelativeLayout>
+
+    <!-- Search  -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Search for dishes or restaurants"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:textColorHint="#AFAFAF"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawableStart="@android:drawable/ic_menu_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF9800"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Featured Dishes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featured Dishes"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/burger"
+
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mandi"
+
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fries"
+
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+    <!-- Category Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Pizza"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Burgers"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Salads"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+    <!-- Popular Dishes Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Dishes"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mandi"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/burger"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</LinearLayout>
