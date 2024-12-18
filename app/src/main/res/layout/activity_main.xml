@@ -51,80 +51,120 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Featured Dishes"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/burger"
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/burger"
 
-            android:layout_margin="5dp" />
+                android:layout_margin="5dp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/burger"
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/mandi"
+                android:layout_margin="5dp" />
 
-            android:layout_margin="5dp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mandi"
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/fries"
+                android:layout_margin="5dp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mandi"
 
-            android:layout_margin="5dp" />
-    </LinearLayout>
+                android:layout_margin="5dp" />
 
-    <!-- Category Buttons -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fries"
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Pizza"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#FF9800"
-            android:layout_margin="5dp" />
+                android:layout_margin="5dp" />
+        </LinearLayout>
+</HorizontalScrollView>
+        <!-- Category Buttons -->
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Burgers"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#FF9800"
-            android:layout_margin="5dp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Pizza"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF9800"
+                android:layout_margin="5dp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Pizza"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF9800"
+                android:layout_margin="5dp" />
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="Salads"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#FF9800"
-            android:layout_margin="5dp" />
-    </LinearLayout>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Burgers"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF9800"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Salads"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF9800"
+                android:layout_margin="5dp" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Burgers"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF9800"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <!-- Popular Dishes Section -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Popular Dishes"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp" />
 
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -144,5 +184,18 @@
             android:src="@drawable/burger"
             android:scaleType="centerCrop"
             android:layout_margin="5dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mandi"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/burger"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp" />
     </LinearLayout>
+</ScrollView>
 </LinearLayout>
